@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fizzbuzz.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+    <script src="fizzbuzz.js"></script>
+    <title>Fizz Buzz</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <a href="index.html">go back</a>
+        </div>
+
+        <div class="containerTitulos">
+            <h1>Fizz Buzz</h1>
+        </div>
+
+        
+            <div class  ="containerForm" >
+                <input type="number" id="numeros" placeholder="put a number" class="txtNumero" />
+                <form action="" id="prueba">
+                <button class="btnLimpiar" id="limpieza" value="limpiar" onclick="resetForm()">clean</button>
+                </form>
+                <button type="button" class="btnMostrar" id="total" value="calcular"
+                onclick="recursiva(document.getElementById('numeros').value)">show Fizz Buzz</button>
+            </div>
+      
+        
+    </header>
+
+    <div class="containerNumeros" id="resultado">
+        <h2>Result</h2>
+    </div>
+
+</body>
+
+</html>

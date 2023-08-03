@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', 'Sans serif'; /* se utiliza para especificar la fuente o tipo de letra que se debe utilizar para mostrar el texto de un elemento HTML*/
+}
+
+.contenedor a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 15px;
+
+}
+
+.banner_title h1{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 80px; /* Ajusta el tamaño deseado */
+}
+
+.bg_animate{
+    width: 100%;
+    height: 100vh; /* propiedad que se utiliza para establecer la altura de un elemento en relación con el tamaño de la ventana gráfica (viewport) del navegador*/
+    background: linear-gradient(to right, #005c98, #505BDA);
+    position: relative;
+    overflow: hidden;
+}
+
+.banner_img{
+    animation: movimiento  2.5s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1px;
+}
+
+.banner_img img{
+    width: 600px;
+    display: block;
+    width: 1000px; /* Ajusta el ancho deseado */
+    height: 700px; /* Ajusta la altura deseada */
+}
+
+/*Efecto burbujas*/
+
+.burbuja{
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;           /*ajustar la opacidad de un elemento y controlar su nivel de transparencia*/
+    position: absolute;
+    bottom: 0;
+
+    /*animation:  name   duration time-function delay;*/
+    animation:  burbujas    3s       linear   infinite;
+}
+
+.burbuja:nth-child(1) { /*utiliza para seleccionar elementos específicos dentro de un contenedor en función de su posición relativa a sus elementos hermanos*/ 
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+} 
+
+.burbuja:nth-child(2) { 
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+} 
+
+.burbuja:nth-child(3) { 
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+} 
+
+.burbuja:nth-child(4) { 
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+} 
+
+.burbuja:nth-child(5) { 
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+} 
+
+.burbuja:nth-child(6) { 
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+} 
+
+.burbuja:nth-child(7) { 
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+} 
+
+.burbuja:nth-child(8) { 
+    width: 100px;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+} 
+
+.burbuja:nth-child(9) { 
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+} 
+
+.burbuja:nth-child(10) { 
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+} 
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

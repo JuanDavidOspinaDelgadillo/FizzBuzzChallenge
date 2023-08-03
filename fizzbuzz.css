@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    
+    background: linear-gradient(to right, #005c98, #505BDA);
+    display: flex;
+}
+
+
+body header {
+    width: 50%;
+    /* background-color: red; */
+    padding: 30px;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.contenedor a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 15px;
+
+}
+
+body header .containerTitulos h1 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 90px;
+}
+
+.containerNumeros
+{
+    display: block;
+    padding-left: 50px;
+    padding-top: 20px;
+
+}
+
+
+.containerNumeros h2{
+    color: #fff;
+    top: 10px;
+    right: 10px;
+    margin-right: 800px; /* para crear un margen de  píxeles en el lado derecho del título.*/
+    padding: 10px;
+}
+
+
+body header .containerForm {
+    /* background-color: blue; */ /*Cambiar el color del cuadro de ingresar numero*/
+    width: 85%;
+    margin: 0px auto;
+}
+
+
+body header .containerForm .txtNumero,
+body header .containerForm .btnLimpiar,
+body header .containerForm .btnMostrar {
+    width: 100%;
+    height: 50px;
+    margin: 15px 0px;
+    border-radius: 3px;
+    border: 1px solid #7599cc; /*Borde de las letras*/
+    background: rgba(96, 220, 241, 0.514);
+    padding: 10px 10px 10px 20px;
+    font-size: 20px;
+    color: #55ccc3;
+}
+
+body header .containerForm .txtNumero {
+    transition: 0.8s;
+    color: #fff; /*color de la letra*/
+}
+
+body header .containerForm .btnLimpiar,
+body header .containerForm .btnMostrar {
+    cursor: pointer;
+    transition: 0.8s;
+    color: #fff;
+}
+
+body header .containerForm .btnLimpiar:hover,
+body header .containerForm .btnMostrar:hover {
+    background: rgba(23, 37, 168, 0);
+    border: 1px solid #55ccc3;
+}
+
+/*editando div derecha  de la pagina*/
+
+.containerNumeros{
+    color: #fff;
+    font-size: xx-large; /*estilo de letra grande*/ 
+}
